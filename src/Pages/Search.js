@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { xml2js } from "xml-js";
 import Button from '@mui/material/Button';
@@ -40,18 +39,11 @@ const Search = () => {
     navigate(`/books?slug=${searchSlug}`)
   }
 
-
-  console.log("searchBooks", searchedBooks)
-
   return (
     <>
 
       <Container maxWidth="sx">
-
-
         <Stack spacing={2} sx={{ width: 400, ml: "35%", mt: "20%" }}>
-
-
           <Autocomplete
             freeSolo
             id="free-solo-2-demo"
@@ -68,9 +60,7 @@ const Search = () => {
                   type: 'search',
                 }}
               />
-
             )}
-
           />
           <Button variant="contained" onClick={handleSubmit}>Search</Button>
         </Stack>
@@ -78,9 +68,7 @@ const Search = () => {
       </Container>
 
     </>
-
-
   )
 }
 
-export default Search
+export default Search;

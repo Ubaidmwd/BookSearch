@@ -44,7 +44,7 @@ const Books = () => {
         }
     }
     const loadMoreData = () => {
-        console.log(page)
+        
         if (page > 1) {
             searchBooks(querySlug);
         }
@@ -98,4 +98,4 @@ const Books = () => {
     );
 }
 
-export default Books
+export default Books;

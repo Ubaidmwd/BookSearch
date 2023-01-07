@@ -49,8 +49,7 @@ const Login = () => {
     const login = () => {
         if (list) {
 
-            let check = local_data.map(user => {
-                console.log("user==", user.password)
+            local_data.map(user => {
                 if (username === user.username && password === user.password) {
 
                     return navigate('/search')
